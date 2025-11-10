@@ -37,5 +37,8 @@ export default function App() {
     return <AuthPage onLogin={handleLogin} />;
   }
 
-  return <LandingPage onGetStarted={handleGetStarted} />;
-}
+  return (
+    <div style={{ width: '100%', minHeight: '100vh' }}>
+      <LandingPage onGetStarted={handleGetStarted} />
+    </div>
+  );}
